@@ -208,7 +208,8 @@ const useWallpaper = (
         }
       } else if (WALLPAPER_PATHS[wallpaperName]) {
         const fallbackWallpaper = (): void =>
-          setWallpaper(wallpaperName === "VANTA" ? "SLIDESHOW" : "VANTA");
+          //setWallpaper(wallpaperName === "VANTA" ? "SLIDESHOW" : "VANTA");
+          setWallpaper("SLIDESHOW");
 
         WALLPAPER_PATHS[wallpaperName]()
           .then(({ default: wallpaper }) =>
@@ -216,7 +217,8 @@ const useWallpaper = (
           )
           .catch(fallbackWallpaper);
       } else {
-        setWallpaper("VANTA");
+        //setWallpaper("VANTA");
+        setWallpaper("SLIDESHOW");
       }
     },
     [
