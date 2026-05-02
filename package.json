@@ -12,6 +12,7 @@
     "defaults and supports es6 and not ie 11 and >1%"
   ],
   "lif": {
+    "webapp": "./lif-os-boot/main.tsx",
     "type": "mjs",
     "alt": [".js", ".jsx", ".ts", ".tsx", "/index.js", "/index.jsx", "/index.ts", "/index.tsx"],
     "web_exports": {
