@@ -29,6 +29,6 @@ describe('browser', function(){
   it('page /?/lif-os/', async function(){
     this.timeout(30000);
     await browser_test({browser, url: url_base+'/?/lif-os/',
-      search: 'LIF Wallet'});
+      search: 'My PC'});
   });
 });
