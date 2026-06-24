@@ -4022,6 +4022,11 @@ dns2@2.0.1:
   resolved "https://registry.npmjs.org/dns2/-/dns2-2.0.1.tgz"
   integrity sha512-jHRTCcS2h/MEQjhcCnOWGENtz5A4RrLoK1YFqlHCejGfK5zYu99C8cxVwTsIY7JUqolhDN8zuGlyqnbEe6azqg==
 
+dns2@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/dns2/-/dns2-3.0.0.tgz"
+  integrity sha512-Tlpq92NzSwYtMw/s0P9rhLzSI+e6PohlOnvGJ1napsE60KcA02zYSwuMysEzuBam6FPDP0nsFXArspdixRAxaA==
+
 doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/doctrine/-/doctrine-2.1.0.tgz"
@@ -6618,10 +6623,15 @@ lie@~3.3.0:
   dependencies:
     immediate "~3.0.5"
 
-lif-kernel@^25.11.4:
-  version "25.11.18"
-  resolved "https://registry.npmjs.org/lif-kernel/-/lif-kernel-25.11.18.tgz"
-  integrity sha512-pL5Tk9WdxgiBjL/UFiivfdPtxJG1myXpX7mtlonGDVzGLUWxyoAsgsp2zx1MXay4Do4Z+UjJTH0YSLJcDdwnhg==
+"lif-kernel@github:lif-zone/lif-kernel#main":
+  version "26.5.17"
+  resolved "git+ssh://git@github.com/lif-zone/lif-kernel.git#78cb74d2d7ace1c92d339faddca2b00574fac169"
+  dependencies:
+    "@babel/standalone" "^7.29.1"
+    "@peculiar/x509" "1.9.3"
+    acme-client "5.0.0"
+    dns2 "3.0.0"
+    ws "^8.20.0"
 
 lilconfig@~3.1.2:
   version "3.1.2"
@@ -9923,10 +9933,10 @@ ws@^7.3.1:
   resolved "https://registry.npmjs.org/ws/-/ws-7.5.10.tgz"
   integrity sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==
 
-ws@^8.11.0:
-  version "8.18.0"
-  resolved "https://registry.npmjs.org/ws/-/ws-8.18.0.tgz"
-  integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
+ws@^8.11.0, ws@^8.20.0:
+  version "8.21.0"
+  resolved "https://registry.npmjs.org/ws/-/ws-8.21.0.tgz"
+  integrity sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==
 
 xlsx@^0.18.5:
   version "0.18.5"
