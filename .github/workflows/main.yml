@@ -18,7 +18,7 @@ jobs:
       - name: Run Jest Unit Tests
         run: npm run test
       - name: Build App
-        run: npm build
+        run: npm run build
       - name: Install Playwright Browsers
         run: npm playwright install --with-deps
       - name: Run Playwright E2E Tests
