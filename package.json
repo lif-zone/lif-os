@@ -1,6 +1,6 @@
 {
   "name": "lif-os",
-  "version": "25.11.4",
+  "version": "26.6.24",
   "description": "Desktop environment in the browser",
   "author": {
     "name": "Dustin Brett",
@@ -54,6 +54,7 @@
     "serve": "serve out",
     "stylelint": "stylelint --formatter=verbose **/*.ts*",
     "test": "jest",
+    "test-lif": "mocha --reporter mocha-multi-reporters --reporter-options configFile=test/mocharc.json test/*.js",
     "unused-exports": "ts-prune --project tsconfig.json --ignore \"\\pages|\\e2e\" --error",
     "update": "yarn upgrade-interactive --latest"
   },
