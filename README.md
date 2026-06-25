@@ -1,6 +1,10 @@
 ## 🌌 **daedalOS** 🌌
 
-[![test](https://github.com/lif-zone/lif-os/actions/workflows/test.yml/badge.svg)](https://github.com/lif-zone/lif-os/actions/workflows/test.yml)
+[![BAT lint](https://github.com/lif-zone/lif-os/actions/workflows/lint.yml/badge.svg)](https://github.com/lif-zone/lif-os/actions/workflows/lint.yml)
+[![BAT LIF](https://github.com/lif-zone/lif-os/actions/workflows/lif.yml/badge.svg)](https://github.com/lif-zone/lif-os/actions/workflows/lif.yml)
+[![BAT old](https://github.com/lif-zone/lif-os/actions/workflows/main.yml/badge.svg)](https://github.com/lif-zone/lif-os/actions/workflows/main.yml)
+
+
 
 ## _Desktop environment in the browser_
 

@@ -1,4 +1,4 @@
-name: BAT test
+name: BAT LIF
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Test LIF
     runs-on: ubuntu-24.04
     timeout-minutes: 2
     steps:
@@ -19,8 +19,6 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
       - name: Install
         run: npm ci --prefer-offline --no-audit --no-fund
-      - name: Lint
-        run: eslint test
       - name: Test
         run: npm run test-lif
       - name: Publish Test Results (Mocha)
