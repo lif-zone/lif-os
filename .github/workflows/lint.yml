@@ -20,4 +20,4 @@ jobs:
       - name: Install
         run: npm ci --prefer-offline --no-audit --no-fund
       - name: Lint
-        run: eslint test
+        run: cd test && eslint
