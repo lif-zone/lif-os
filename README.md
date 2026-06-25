@@ -1,5 +1,7 @@
 ## 🌌 **daedalOS** 🌌
 
+[![test](https://github.com/lif-zone/lif-os/actions/workflows/test.yml/badge.svg)](https://github.com/lif-zone/lif-os/actions/workflows/test.yml)
+
 ## _Desktop environment in the browser_
 
 [![Feature Overview](https://img.youtube.com/vi/RRLq3T0Surs/mqdefault.jpg)](http://www.youtube.com/watch?v=RRLq3T0Surs)

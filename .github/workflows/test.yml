@@ -1,0 +1,31 @@
+name: BAT test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: 26.1.0
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - name: Install
+        run: npm ci --prefer-offline --no-audit --no-fund
+      - name: Lint
+        run: eslint test
+      - name: Test
+        run: npm run test-lif
+      - name: Publish Test Results (Mocha)
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: ./test/results.xml
+          comment_mode: always
