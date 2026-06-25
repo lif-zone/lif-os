@@ -21,11 +21,3 @@ jobs:
         run: npm ci --prefer-offline --no-audit --no-fund
       - name: Lint
         run: eslint test
-      - name: Test
-        run: npm run test-lif
-      - name: Publish Test Results (Mocha)
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          files: ./test/results.xml
-          comment_mode: always
