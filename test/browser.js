@@ -6,6 +6,7 @@ import puppeteer from 'puppeteer-core';
 import etask from 'lif-kernel/etask';
 import {browser_open, browser_test, server_open, fetch_test,
 } from 'lif-kernel/test/test_lib.js';
+/* globals describe, before, after, it */
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const port = 4006;
