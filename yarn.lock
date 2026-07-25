@@ -6753,8 +6753,8 @@ lie@~3.3.0:
     immediate "~3.0.5"
 
 "lif-kernel@github:lif-zone/lif-kernel#main":
-  version "26.5.17"
-  resolved "git+ssh://git@github.com/lif-zone/lif-kernel.git#d0d7412604ec95075c402a9da1a948aa513421b1"
+  version "26.7.21"
+  resolved "git+ssh://git@github.com/lif-zone/lif-kernel.git#25c19461096bda5b4add84411786c8fed76404aa"
   dependencies:
     "@babel/standalone" "^7.29.1"
     "@peculiar/x509" "1.9.3"
