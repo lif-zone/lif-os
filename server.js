@@ -1,7 +1,0 @@
-#!/usr/bin/env node
-import server from 'lif-kernel/web/server_lib.js';
-let root = import.meta.dirname;
-let map = {};
-map['/lif-kernel'] = 'node_modules/lif-kernel';
-map['/lif-os'] = '.';
-server({map, root});
