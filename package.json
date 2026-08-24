@@ -16,13 +16,13 @@
     "type": "mjs",
     "alt": [".js", ".jsx", ".ts", ".tsx", "/index.js", "/index.jsx", "/index.ts", "/index.tsx"],
     "web_exports": {
-      "/System/": "./public/System/",
-      "/Program Files/": "./public/Program Files/",
-      "/Users/": "./public/Users/",
-      "/screenshot.png": "./public/screenshot.png",
-      "/session.json": "./public/session.json",
-      "/.index": "./public/.index",
-      "/favicon.ico": "./public/favicon.ico"
+      "./System/*": "./public/System/*",
+      "./Program Files/*": "./public/Program Files/*",
+      "./Users/*": "./public/Users/*",
+      "./screenshot.png": "./public/screenshot.png",
+      "./session.json": "./public/session.json",
+      "./.index": "./public/.index",
+      "./favicon.ico": "./public/favicon.ico"
     },
     "dependencies": {
       "browserfs": "^2.0.0",
