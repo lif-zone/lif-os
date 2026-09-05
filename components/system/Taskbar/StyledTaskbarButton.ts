@@ -23,7 +23,7 @@ const StyledTaskbarButton = styled(Button)<StyledTaskbarButtonProps>`
     width: ${({ theme }) => theme.sizes.taskbar.button.width}px;
   }
 
-  svg {
+  svg, img {
     height: ${({ theme }) => theme.sizes.taskbar.button.iconSize};
   }
 
