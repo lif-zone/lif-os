@@ -98,7 +98,7 @@ export const getIconFromIni = (
     fs.lstat(iniPath, (statError, stats) => {
       if (statError) resolve("");
       else if (stats && isExistingFile(stats)) {
-        import("public/.index/iniIcons.json").then(({ default: iniCache }) =>
+        import("public/.index/iniIcons.json", {type: 'json'}).then(({ default: iniCache }) =>
           resolve(iniCache[directory as keyof typeof iniCache] || "")
         );
       } else {
