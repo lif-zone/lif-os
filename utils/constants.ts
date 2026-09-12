@@ -22,7 +22,6 @@ export const DEFAULT_CLOCK_SOURCE: ClockSource = "local";
 
 export const DEFAULT_THEME: ThemeName = "defaultTheme";
 
-//export const DEFAULT_WALLPAPER = "/screenshot.png";
 export const DEFAULT_WALLPAPER = "/Users/Public/Pictures/wallpaper_hola.jpg";
 //export const DEFAULT_WALLPAPER = "VANTA";
 
