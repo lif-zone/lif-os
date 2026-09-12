@@ -19,10 +19,7 @@
       "./System/*": "./public/System/*",
       "./Program Files/*": "./public/Program Files/*",
       "./Users/*": "./public/Users/*",
-      "./screenshot.png": "./public/screenshot.png",
-      "./session.json": "./public/session.json",
-      "./.index": "./public/.index",
-      "./favicon.ico": "./public/favicon.ico"
+      "./*": "./public/*"
     },
     "dependencies": {
       "browserfs": "^2.0.0",
